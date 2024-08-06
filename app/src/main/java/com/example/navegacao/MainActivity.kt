@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
                             })
                         }
                         composable("principal") {
-                            TelaPrincipal(modifier = Modifier.padding(innerPadding), onSignUpClick = {
+                            TelaPrincipal(modifier = Modifier.padding(innerPadding), onLogoffClick = {
                                 navController.navigate("login")
                             })
                         }

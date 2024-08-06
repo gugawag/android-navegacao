@@ -9,10 +9,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun TelaPrincipal(modifier: Modifier = Modifier, onSignUpClick: () -> Unit) {
+fun TelaPrincipal(modifier: Modifier = Modifier, onLogoffClick: () -> Unit) {
     Column (horizontalAlignment = Alignment.CenterHorizontally, modifier = modifier.fillMaxSize()) {
             Text(text = "Tela principal aqui")
-            Button(onClick = { onSignUpClick() }) {
+            Button(onClick = { onLogoffClick() }) {
                 Text("Sair")
             }
     }
