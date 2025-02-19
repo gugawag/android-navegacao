@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+//  necessário para usar os serviços do Google, entre eles o banco firestore
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -51,6 +53,12 @@ android {
 
 dependencies {
 
+    // necessário para o banco Firebase/Firestore
+    implementation(libs.google.firebase.bom)
+//    implementation(libs.firebase.analytics)
+//    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.firestore.ktx)
+
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -60,6 +68,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

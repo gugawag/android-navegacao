@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "205975563810",
+    "project_id": "pdm-fire",
+    "storage_bucket": "pdm-fire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205975563810:android:16a234c585b74f1728e47b",
+        "android_client_info": {
+          "package_name": "com.example.navegacao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvge9_6V7Pivn6LyVwCAONDQWb9Io2eEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
